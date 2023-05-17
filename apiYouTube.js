@@ -1,5 +1,5 @@
-import { comentarios } from "./comentarios.js";
-import { videoRelacionados } from "./videosRelacionados.js";
+import  comentarios  from "./comentarios.js";
+import  videoRelacionados  from "./videosRelacionados.js";
 
 
 async function buscar() {

@@ -1,4 +1,4 @@
-export async function videoRelacionados(id){
+export default async function (id){
 	const url = `https://youtube138.p.rapidapi.com/video/related-contents/?id=${id}&hl=en&gl=US`;
 	const options = {
 	method: 'GET',

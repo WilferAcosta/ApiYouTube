@@ -1,4 +1,4 @@
-export async function comentarios(id){
+export default async function comentarios(id){
 	const url = `https://youtube138.p.rapidapi.com/video/comments/?id=${id}&hl=en&gl=US`;
 const options = {
 	method: 'GET',
