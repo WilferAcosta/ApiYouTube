@@ -3,7 +3,7 @@
 async function buscar() {
     const buscar = document.getElementById("buscar").value;
     const url = `https://youtube138.p.rapidapi.com/search/?q=${buscar}&hl=en&gl=US`;
-const options = {
+	const options = {
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Key': '3c3a7a1fa4msh0e92c078fd61424p137867jsnebb20098d172',
@@ -14,7 +14,7 @@ try {
 	let body= "";
 	const response = await fetch(url, options);
 	const result = await response.json();
-  console.log(result);
+	console.log(result);
 	console.log();
 	const id = result.contents[0].video.videoId;
 
@@ -38,7 +38,6 @@ const options = {
 		'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
 	}
 };
-
 try {
 	let body2 = "";
 	const response = await fetch(url, options);
@@ -53,7 +52,6 @@ try {
 	console.error(error);
 }
 }
-
 async function videoRelacionados(id){
 	const url = `https://youtube138.p.rapidapi.com/video/related-contents/?id=${id}&hl=en&gl=US`;
 	const options = {
@@ -63,7 +61,6 @@ async function videoRelacionados(id){
 		'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
 	}
 };
-
 try {
 	let body3 = "";
 	const response = await fetch(url, options);
